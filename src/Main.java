@@ -1,11 +1,16 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-     int [] SortArr = {12, 5, 77, 33, 4, 3, 13, 1, 23, 11, 2, 6};
+     int [] SortArr = new int[4];
+     Scanner input = new Scanner(System.in);
+     for(int i = 0; i < SortArr.length; i++){
+         SortArr[i] = input.nextInt();
+     }
      insertionSort(SortArr);
-        System.out.println(Arrays.toString(SortArr));
+     System.out.println(Arrays.toString(SortArr));
     }
 
     public static void insertionSort(int[] arr) {
