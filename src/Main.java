@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-     int [] SortArr = new int[4];
+     int [] SortArr = new int[12];
      Scanner input = new Scanner(System.in);
      for(int i = 0; i < SortArr.length; i++){
          SortArr[i] = input.nextInt();
